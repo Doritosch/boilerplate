@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: project
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb?createDatabaseIfNotExist=true
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+logging:
+  level:
+    dev.minsu: debug
+
+
+
+
